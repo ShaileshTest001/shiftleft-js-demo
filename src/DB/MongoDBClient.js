@@ -10,7 +10,7 @@ class MongoDBClient {
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        auth: { username: 'admin', password: 'password' }
+        auth: { username: 'admin', password: 'process.env.PASSWORD' }
       },
       (err, db) => {
         if (!err) {
