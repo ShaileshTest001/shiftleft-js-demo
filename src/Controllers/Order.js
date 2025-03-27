@@ -2,7 +2,7 @@ const crypto = require('crypto');
 const https = require('https');
 const mail = require('../Integrations/Mail');
 
-const encryptionKey = "This is a simple key, don't guess it";
+const encryptionKey = process.env.ENCRYKey;
 class Order {
   hex(key) {
     // Hash Key
