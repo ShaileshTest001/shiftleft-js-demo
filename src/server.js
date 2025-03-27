@@ -9,7 +9,7 @@ const registerViewRoutes = require('./views');
 
 const app = express();
 const port = process.env.PORT || 8088;
-const SESSION_SECRET_KEY = 'kjhdkd-sjkhsjsh-kjshshkdhsk-jsjhd';
+const SESSION_SECRET_KEY = process.env.SESSION_SECRET_KEY;
 
 const tarpitEnv = {
   sessionSecretKey: process.env.SESSION_SECRET_KEY || SESSION_SECRET_KEY,
